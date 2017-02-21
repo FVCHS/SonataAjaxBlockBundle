@@ -1,0 +1,22 @@
+{
+  "name": "fvchs/sonata-ajax-block-bundle",
+  "type": "library",
+  "description": "Adds Ajax functionality to the sonata block bundle.",
+  "keywords": ["sonata","block","ajax"],
+  "homepage": "https://github.com/Fvchs/SonataAjaxBlockBundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andre Fuchs",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.0"
+  },
+  "autoload": {
+    "psr-0": {
+      "Monolog": "src"
+    }
+  }
+}

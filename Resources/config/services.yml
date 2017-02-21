@@ -1,0 +1,15 @@
+services:
+
+    fvchs.sonata_ajax_block.service:
+        class: Fvchs\SonataAjaxBlockBundle\Service\Block\AjaxBlockService
+        arguments:
+            - '@service_container'
+
+    fvchs.sonata_ajax_block.renderer:
+        class: Fvchs\SonataAjaxBlockBundle\Service\Block\AjaxBlockRenderer
+        arguments:
+            - '@sonata.block.manager'
+            - '@sonata.block.exception.strategy.manager'
+            - '@logger'
+            - '%kernel.debug%'
+            - '@fvchs.sonata_ajax_block.service'

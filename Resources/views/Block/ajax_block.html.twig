@@ -1,0 +1,23 @@
+<div data-block-id="{{ id }}">
+    <div class="box">loading ...</div>
+</div>
+
+<script>
+    $(function() {
+        setTimeout(function () {
+            var identifier = 'div[data-block-id="{{ id }}"]';
+
+            $.ajax({
+                url: "/ajaxblock",
+                data: {
+                    id: "{{ id }}"
+                }
+            }).done(function(data) {
+                $( identifier ).html( data );
+            }).error(function(data) {
+                $( identifier ).html( "Error." );
+            });
+
+        }, 10);
+    });
+</script>

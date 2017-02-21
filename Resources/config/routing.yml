@@ -1,0 +1,4 @@
+ajax_block:
+    path:     /ajaxblock
+    defaults: { _controller: 'FvchsSonataAjaxBlockBundle:Block/AjaxBlock:getBlock' }
+    methods:  [GET]
