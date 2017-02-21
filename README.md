@@ -56,7 +56,8 @@ class AppKernel extends Kernel
             
 * Add this to your routing configuration
 
-        #  routing.yml
+        #  app/config/routing.yml
+        
         fvchs_sonata_ajax_block:
             resource: "@FvchsSonataAjaxBlockBundle/Resources/config/routing.yml"
             prefix:   /
