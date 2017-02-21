@@ -54,6 +54,13 @@ class AppKernel extends Kernel
         services:
             sonata.block.renderer: '@fvchs.sonata_ajax_block.renderer'
             
+* Add this to your routing configuration
+
+        #  routing.yml
+        fvchs_sonata_ajax_block:
+            resource: "@FvchsSonataAjaxBlockBundle/Resources/config/routing.yml"
+            prefix:   /
+            
             
 * Mark Blocks with the ajax attribute
 
